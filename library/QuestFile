@@ -1,0 +1,70 @@
+// this is a temporary file pending the JSON description for each quest
+// this is extracted from the current code
+
+ // loads the library in memory
+    func load() {
+// mood
+questNode(
+"{quest:Mood2, category:3, icloud:true, mood:{ type:2, more:true, min:1, max:6, target:5, labels:[depressed 😩,  unhappy ☹️,  stressed 😟,  normal 🙂,  good 😊,  ecstatic 🤗 ],}, energy:{type:2, more:true, min:1, max:6, target:5, labels:[crisis,  sleepy,  lapses,  normal,  energetic,  hyper],}, load:{ type:2, more:false, min:1, max:5, target:3, labels:[free 😀,  light load 😐,  average,  long 😕,  too much 😦],}, heart:{ type:6, more:false, min:55, max:140, target:80, }, }",
+from:"Yves")
+
+// NewYear: feel, drink, coffee, smoke
+questNode(
+"{quest:NewYear, icloud:true, feel:{ type:2, more:true, min:1, max:6, target:5,labels:[ overwhelmed😩,  weak ☹️,  stressed 😟,  normal 🙂,  strong 😊,  energetic 🤗 ],}, drink:{type:2, more:false, min:1, max:5, target:2, labels:[none,a sip, a glass, two glasses, too much],}, coffee:{type:1, more:false, min:0, max:5, target:1,},  smoke:{type:1, more:false, min:0, max:20, target:0,}, }",
+   from:"Knomee")
+
+// EnergyAuto: energy, step, sleep, cardio
+questNode(
+"{quest:EnergyAuto, category:5, icloud:true, energy:{ type:2, more:true, min:1, max:6, target:4,labels:[ exhausted😩,  sleep☹️,  tired 😟,  normal 🙂,  energetic 😊,  hyper 🤗 ],}, steps:{type:4, more:true, min:0, max:20000, target:10000,}, sleep:{type:7, more:true, min:4, max:12, target:7,},  heart:{type:6, more:false, min:50, max:140, target:70,},}",
+   from:"Knomee")
+
+// Sport: performance, training, sleep, diet
+questNode(
+"{quest:Sport, category:5, icloud:true, performance:{ type:2, more:true, min:1, max:6, target:5, labels:[terrible 😩,  poor ☹️,  almost 😟,  average 🙂,  good 😊,  excellent 🤗 ],}, training:{type:2, more:true, min:1, max:6, target:5, labels:[none,  not enough,  average,  normal,  excellent],}, sleep:{type:7, more:true, min:4, max:12, target:7,}, diet:{ type:2, more:false, min:1, max:5, target:3, labels:[perfect 😀,  close 🙂,  regular,  poor 😕,  too much 😦],},}",
+from:"Knomee")
+
+// MentalHealth
+questNode(
+"{quest:MentalHealth, category:3, icloud:true, mood:{ type:2, more:true, min:1, max:6, target:5, labels:[not good 😩,  unhappy ☹️,  poor 😟,  normal 🙂,  good 😊,  really good 🤗 ],}, stress:{type:2, more:false, min:1, max:6, target:2, labels:[zen,  none,  normal,  light stress,  stressed,  awful],}, anxiety:{ type:2, more:false, min:1, max:5, target:1, labels:[free 😀,  none,  average😐,  anxious 😕,  too much 😦],}, steps:{ type:4, more:true, min:0, max:20000, target:8000, }, }",
+from:"Laure")
+
+// Mood inspired by National Center for Telehalth and Technology
+questNode(
+"{quest:MoodTrack, category:3, icloud:true, well-being:{ type:2, more:true, min:1, max:6, target:5, labels:[not good 😩,  unhappy ☹️,  poor 😟,  normal 🙂,  good 😊,  really good 🤗 ],}, depressed:{type:2, more:false, min:1, max:5, target:2, labels: [none,  manageable,  bearable,  hard,  pain],}, stress:{type:2, more:false, min:1, max:6, target:2, labels:[zen,  none,  normal,  light stress,  stressed,  awful],}, anxiety:{ type:2, more:false, min:1, max:5, target:1, labels:[free 😀,  none,  average😐,  anxious 😕,  too much 😦],}, }",
+from:"NCTT")
+
+// food: weight, carbs, fat, proteins
+questNode(
+"{quest:Food, category:4, icloud:true, weight:{ type:5, more:false, min:40, max:120, target:75,}, carbs:{type:2, more:true, min:1, max:4, target:3, labels:[none,  diet level,  moderate,  a bit much,  too much],}, fat:{ type:2, more:false, min:1, max:5, target:3, labels:[none,  diet,  moderate,  a bit much,  too much],}, proteins:{ type:2, more:true, min:1, max:5, target:4, labels:[none,  diet,  moderate,  healthy,  feast],}, }",
+from:"Yves")
+
+// pain: discomfort, steps, sleep
+questNode(
+"{quest:Pain, category:2, icloud:true, discomfort:{type:2, more:true, min:1, max:5, target:5, labels:[painful 😩,  bad ☹️,  poor 😟,  acceptable 🙂,  none 😊 ],}, steps:{type:4, more:true, min:0, max:20000, target:10000,}, sleep:{type:7, more:true, min:4, max:12, target:7,}, }",
+from:"Knomee")
+
+// water: intake
+questNode(
+"{quest:WaterIntake, category:4, icloud:true, glasses:{type:1, more:true, min:0, max:5, target:2,}, others:{type:1, more:true, min:0, max:5, target:1,}, weather:{type:2, more:false, min:1, max:5, target:3, labels:[hot 😩,  cold/dry ☹️,  regular 🙂,  cool 😊 ],}, }",
+from:"Knomee")
+
+// backCare: backAche, stretching, exercise, careful
+questNode(
+"{quest:BackCare, category:2, icloud:true, aches:{type:2, more:true, min:1, max:4, target:4, labels:[hurts! 😩,  painful ☹️,  unhappy 😟,  regular 😊 ],}, stretching:{type:2, more:true, min:1, max:4, target:4, labels:[none,  weekly,  twice,  daily ],}, exercise:{type:2, more:true, min:1, max:4, target:4, labels:[none 😩,  monthly ☹️,  weekly 🙂,  often 😊 ],}, careful:{type:2, more:false, min:1, max:4, target:2, labels:[no effort, cautious, posture,  none ],},}",
+from:"William")
+
+// mindfulness: mindful, meditate, thankful, helpOther
+questNode(
+"{quest:Mindfulness, category:3, icloud:true, mindful:{type:2, more:true, min:1, max:4, target:4, labels:[closed 😩,  worried ☹️,  open 🙂, peace 😊 ],}, medidate:{type:2, more:true, min:1, max:5, target:4, labels:[none, monthly, weekly, twice, daily ],}, thankful:{type:2, more:true, min:1, max:5, target:4, labels:[none, monthly, weekly, twice, daily ],}, helpful:{type:2, more:true, min:1, max:5, target:4, labels:[none, monthly, weekly, twice, daily ],},}",
+from:"Beatrice")
+
+// cramp : banana, magnesium
+questNode(
+"{quest:Pregnancy, category:2, icloud:true, cramps:{type:2, more:false, min:1, max:4, target:4, labels:[none,  one light,  many, tense ☹️ ],}, banana:{type:3, more:true, min:1, max:2, target:2, labels:[no, yes],}, magnesium:{type:2, more:false, min:1, max:3, target:1, labels:[today, yesterday, late ],},}",
+from:"Laure-Helene")
+
+// backCare: backAche, stretching, exercise, careful
+questNode(
+"{quest:Keto, category:4, icloud:true, weight:{ type:5, more:false, min:40, max:120, target:75,}, carbs:{type:2, more:false, min:1, max:2, target:3, labels:[none,  below 5%,  below 10%,  below 20%,  too much],}, fat:{ type:2, more:true, min:1, max:5, target:3, labels:[not much,  below 50%,  50-65%,  65-75%, over75%],}, proteins:{ type:2, more:true, min:1, max:4, target:3, labels:[less 10%, 10-20%,  20%-30%, over 30%],}, }",
+from:"Ketogenic diet")
+
